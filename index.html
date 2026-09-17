@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRID</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="app-title">Supercomputo en Grid</header>
+
+  <main id="app">
+
+    <!-- Pantalla inicial -->
+    <section id="screen-start" class="screen active">
+      <div class="start-box">
+        <textarea id="input-questions" placeholder="Pega aquí tus preguntas..."></textarea>
+        <p id="error-message" class="error-message"></p>
+      </div>
+    </section>
+
+    <!-- Pantalla de juego -->
+    <section id="screen-game" class="screen">
+      <div class="question-area">
+        <h2 id="question-text"></h2>
+      </div>
+      <div class="options-area">
+        <div id="options-list" class="options-list"></div>
+      </div>
+    </section>
+
+    <!-- Pantalla final -->
+    <section id="screen-end" class="screen">
+      <div class="end-box">
+        <p>FIN</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="action-bar">
+    <button id="btn-restart" class="btn btn-secondary">Reiniciar</button>
+    <button id="btn-main-action" class="btn btn-primary">Comenzar</button>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

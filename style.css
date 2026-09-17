@@ -1,0 +1,265 @@
+:root {
+  --bg: #0b0d10;
+  --surface: #14171b;
+  --border: #232830;
+  --text: #e6e8eb;
+  --text-dim: #8b929c;
+  --blue: #4c8dff;
+  --green: #3ecf8e;
+  --red: #ff5c5c;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Glows en las esquinas */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 45vw;
+  height: 45vw;
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.16;
+  z-index: 0;
+  pointer-events: none;
+}
+
+body::before {
+  top: -10%;
+  left: -10%;
+  background: var(--blue);
+}
+
+body::after {
+  bottom: -10%;
+  right: -10%;
+  background: var(--green);
+}
+
+.app-title {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 22px 16px 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+#app {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.screen {
+  display: none;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 24px;
+}
+
+.screen.active {
+  display: flex;
+}
+
+/* Pantalla inicial */
+#screen-start {
+  align-items: center;
+  justify-content: center;
+}
+
+.start-box {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#input-questions {
+  width: 100%;
+  height: 320px;
+  resize: vertical;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.92rem;
+  padding: 16px;
+  line-height: 1.5;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+#input-questions:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(76, 141, 255, 0.12);
+}
+
+.error-message {
+  min-height: 1.2em;
+  color: var(--red);
+  font-size: 0.85rem;
+  margin: 0;
+  padding-left: 2px;
+}
+
+/* Pantalla de juego */
+#screen-game {
+  justify-content: flex-start;
+}
+
+.question-area {
+  padding-top: 64px;
+  text-align: center;
+}
+
+#question-text {
+  font-size: 2.8rem;
+  max-width: 80%;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: auto;
+  color: var(--text);
+}
+
+.options-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  padding: 24px 0;
+}
+
+.options-list {
+  width: 100%;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: var(--text);
+  text-align: left;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.option.correct {
+  border-color: var(--green);
+  background: rgba(62, 207, 142, 0.08);
+  box-shadow: 0 0 16px rgba(62, 207, 142, 0.18);
+  transform: scale(1.2);
+  transition: all 0.3s;
+  color: var(--green);
+}
+
+/* Pantalla final */
+#screen-end {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.end-box p {
+  font-size: 1.15rem;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+/* Barra de acciones */
+.action-bar {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  border-top: 1px solid var(--border);
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 12px 22px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  background: var(--surface);
+  color: var(--text);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  border-color: var(--text-dim);
+}
+
+.btn-primary {
+  border-color: var(--blue);
+  color: var(--text);
+  box-shadow: 0 0 14px rgba(76, 141, 255, 0.12);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 18px rgba(76, 141, 255, 0.22);
+}
+
+.btn-secondary {
+  color: var(--text-dim);
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  #question-text {
+    font-size: 1.15rem;
+  }
+  .action-bar {
+    padding: 14px 16px;
+  }
+  .btn {
+    padding: 10px 16px;
+    font-size: 0.88rem;
+  }
+}
