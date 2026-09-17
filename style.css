@@ -165,7 +165,7 @@ body::after {
 
 .options-list {
   width: 100%;
-  max-width: 620px;
+  max-width: 720px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -176,7 +176,7 @@ body::after {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 16px 20px;
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: var(--text);
   text-align: left;
   transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
