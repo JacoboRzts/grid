@@ -57,94 +57,66 @@ Dentro de los proyectos destacados en la OSG, ¿Cuál corresponde al detector de
 - Física general
 - Ciencias de la información
 - Astrofísica
-Una universidad conecta computadoras de diferentes laboratorios para que puedan utilizarse en conjunto para resolver distintos trabajos. ¿Qué característica permite considerar este sistema como Grid Computing?
-- Que todas las computadoras tengan el mismo hardware
-- Que todas ejecuten exactamente el mismo programa
-* Que los recursos distribuidos puedan ser coordinados y utilizados para distintos trabajos
-- Que todas las computadoras ejecuten sus tareas simultáneamente
 
-Un investigador envía un trabajo al Grid, pero no necesita saber qué computadora específica lo ejecutará. ¿Qué componente permite abstraer esta complejidad y coordinar la interacción entre los recursos?
-- Nodo proveedor
-- Nodo de datos
-* Middleware
-- Nodo usuario
+¿Qué significa CERN originalmente?
+- Centro Europeo para Redes Nucleares
+* Conseil Européen pour la Recherche Nucléaire
+- Consejo Europeo de Recursos Naturales
+- Centro Europeo de Investigación de Nuevas Tecnologías
 
-Una computadora participante dispone de una GPU potente y permite que el Grid la utilice para determinados cálculos. ¿Qué función está desempeñando principalmente esta computadora?
-- Solicitar recursos al Grid
-- Almacenar permanentemente los resultados
-* Proporcionar recursos computacionales
-- Coordinar necesariamente todos los nodos
+¿Cuál fue uno de los objetivos principales de la creación del CERN después de la Segunda Guerra Mundial?
+- Desarrollar computadoras personales para Europa
+* Crear un laboratorio de clase mundial y evitar la fuga de científicos hacia Norteamérica
+- Construir el primer satélite europeo
+- Desarrollar armas nucleares para Europa
 
-En una infraestructura Grid, varios nodos reciben diferentes partes de un trabajo. Sin embargo, no todos terminan al mismo tiempo. ¿Cuál afirmación es más adecuada?
-- El sistema deja de ser Grid porque los nodos deben trabajar simultáneamente
-* El Grid puede distribuir trabajos sin requerir que todos los nodos ejecuten sus tareas exactamente al mismo tiempo
-- El middleware obliga a todos los nodos a terminar simultáneamente
-- La ejecución simultánea es lo que define a cualquier Grid
+¿Qué es el LHC?
+- Una red mundial de computadoras
+- Un sistema de almacenamiento de datos
+* El acelerador de partículas más largo y poderoso del mundo
+- Una supercomputadora utilizada por el CERN
 
-¿Cuál de las siguientes situaciones representa mejor una aplicación de computación paralela dentro de un Grid?
-- Varias computadoras almacenan diferentes archivos sin comunicarse
-* Un trabajo se divide en varias partes que son procesadas simultáneamente por diferentes recursos
-- Una computadora espera a que otra termine antes de recibir cualquier tarea
-- Un usuario solicita almacenamiento a un servidor
+¿Cuál es aproximadamente la longitud del anillo del LHC?
+- 5 km
+- 15 km
+* 27 km
+- 100 km
 
-Un Grid está formado por computadoras con diferentes procesadores, cantidades de RAM y GPUs. ¿Qué característica del Grid explica mejor esta situación?
-- Dependencia obligatoria de un único fabricante
-* Heterogeneidad de los recursos
-- Paralelismo obligatorio
-- Centralización del procesamiento
+¿A qué profundidad aproximada se encuentra el LHC?
+- 10 metros bajo tierra
+- 50 metros bajo tierra
+* 100 metros bajo tierra
+- 500 metros bajo tierra
 
-¿Cuál situación podría hacer que un Grid con una gran cantidad de FLOPS tenga un rendimiento inferior al de una supercomputadora para determinado problema?
-- Que el Grid tenga más recursos computacionales
-- Que los nodos tengan diferentes capacidades
-* Que el problema requiera una comunicación frecuente entre nodos y la red introduzca latencia
-- Que el Grid pueda incorporar nuevos nodos
+¿Cuál es el principal objetivo del WLCG?
+- Construir nuevos aceleradores de partículas
+* Almacenar, distribuir y analizar los datos generados por el LHC
+- Diseñar los imanes superconductores del LHC
+- Sustituir al CERN como laboratorio de física
 
-Un problema puede dividirse en 10,000 tareas independientes que apenas necesitan comunicarse entre sí. ¿Por qué este problema podría adaptarse bien a un Grid?
-- Porque requiere que todos los nodos compartan la misma memoria
-* Porque las tareas pueden distribuirse entre diferentes recursos con poca necesidad de comunicación
-- Porque obliga a todos los nodos a utilizar la misma CPU
-- Porque necesita que un único nodo realice todos los cálculos
+Según la información proporcionada, ¿cuántos países participan en la infraestructura del WLCG?
+- 27 países
+* 42 países- 100 países
+- 170 países
 
-¿Cuál afirmación diferencia correctamente una supercomputadora de un Grid?
-- Una supercomputadora siempre utiliza menos procesadores que un Grid
-* Una supercomputadora concentra recursos altamente integrados, mientras que un Grid coordina recursos distribuidos
-- Un Grid solamente puede utilizar computadoras personales
-- Una supercomputadora no puede ejecutar trabajos en paralelo
+¿Cuál de las siguientes actividades corresponde principalmente al Tier 0 del WLCG?
+- Análisis de datos por los investigadores
+- Almacenamiento y reprocesamiento de datos
+* Reconstrucción de eventos a partir de los datos crudos de las colisiones
+- Generación de colisiones simuladas
 
-Un Grid tiene una capacidad agregada de 20 PFLOPS, mientras que una supercomputadora tiene 15 PFLOPS. ¿Qué conclusión es válida?
-- El Grid siempre resolverá cualquier problema más rápido
-- La supercomputadora necesariamente será más lenta
-* El Grid tiene mayor capacidad computacional agregada, pero eso no determina por sí solo el tiempo de ejecución de cualquier problema
-- Los FLOPS no pueden utilizarse para comparar sistemas
+¿Qué actividad se realiza principalmente en el Tier 2?
+- Reconstrucción inicial de eventos
+- Almacenamiento de los datos crudos
+* Generación de colisiones simuladas y análisis de datos del Tier 1
+- Construcción de nuevos aceleradores
 
-En un Grid, una computadora termina una tarea y posteriormente recibe otra, mientras otras computadoras continúan trabajando. ¿Qué concepto explica mejor esta situación?
-- Ejecución paralela obligatoria
-* Distribución y asignación de trabajos
-- Centralización de recursos
-- Unificación física de las computadoras
+¿Cuál es una diferencia fundamental entre aumentar la capacidad de un supercómputo y aumentar la capacidad de un sistema de cómputo en grid?
+- El supercómputo agrega servidores en diferentes países, mientras que el grid usa una sola computadora
+* El supercómputo expande una supercomputadora, mientras que el grid incorpora más servidores o centros de cómputo
+- Ambos aumentan la capacidad exactamente de la misma manera
+- El grid únicamente aumenta el almacenamiento y el supercómputo únicamente aumenta la velocidad de Internet
 
-¿Cuál afirmación sobre los nodos de control es la más precisa?
-- Todo Grid debe tener exactamente un nodo de control
-- El nodo de control es siempre el encargado de realizar todos los cálculos
-* Un Grid puede utilizar componentes o servicios de control para coordinar trabajos, pero la coordinación no necesariamente depende de un único nodo físico
-- El nodo de control solamente puede almacenar datos
-
-Una computadora recibe un programa, los datos necesarios y las instrucciones para ejecutarlo. ¿Qué función del middleware está relacionada directamente con este proceso?
-- Convertir físicamente la computadora en un nuevo nodo
-* Gestionar la ejecución y comunicación de los trabajos con los recursos disponibles
-- Aumentar la frecuencia del procesador
-- Crear memoria RAM adicional
-
-¿Cuál situación representa mejor la ventaja de utilizar un Grid en lugar de construir una infraestructura completamente nueva?
-- Comprar un único servidor mucho más potente
-* Aprovechar computadoras y recursos existentes de diferentes lugares para realizar trabajos coordinadamente
-- Hacer que todas las computadoras tengan exactamente las mismas características
-- Eliminar la necesidad de una red de comunicación
-
-Una empresa tiene 100 computadoras conectadas. Cada computadora puede realizar tareas diferentes y existe un sistema que decide qué trabajo enviar a cada una. ¿Qué elemento representa mejor ese “sistema de organización”?
-- Nodo proveedor- Nodo usuario
-* Middleware
-- Nodo de datos
 ¿En qué periodo surgieron los primeros experimentos para supercomputación a través de WAN (The Gigabit Network Testbeds)?
 - 1995-1998
 * 1989-1996
@@ -216,3 +188,93 @@ Una empresa tiene 100 computadoras conectadas. Cada computadora puede realizar t
 - Resource
 - Collective
 * Application
+
+¿Qué característica define principalmente a un sistema de cómputo en Grid?
+- El uso de equipos idénticos conectados a una misma red.
+* La coordinación de recursos independientes para ejecutar trabajos.
+- La división obligatoria de un programa entre varios procesadores.
+- La concentración de recursos en un único servidor de procesamiento
+
+¿Cuál es una función característica del middleware en un Grid?
+- Proporcionar directamente la memoria física de cada computadora.
+- Ejecutar todos los programas desde un servidor centralizado.
+- Sustituir los sistemas operativos de los nodos participantes.
+* Facilitar la comunicación y gestión de los recursos distribuidos.
+
+Una universidad incorpora servidores de otra institución para procesar trabajos científicos. ¿Qué concepto representa principalmente?
+- Virtualización de recursos físicos entre servidores.
+- Multiprocesamiento de aplicaciones dentro de un servidor.
+* Compartición coordinada de recursos entre organizaciones.
+- Consolidación de servicios en una infraestructura central.
+
+¿Cuál afirmación sobre las tareas ejecutadas en un Grid es correcta?
+- Todas deben comenzar exactamente al mismo tiempo.
+- Todas deben utilizar necesariamente los mismos recursos.
+- Todas deben ejecutarse dentro de una única computadora.
+* Algunas pueden ejecutarse independientemente en distintos nodos.
+
+¿Cuál situación aprovecha mejor las características de un Grid?
+- Resolver una operación que requiere comunicación constante entre procesos.
+- Ejecutar un programa que depende de una memoria compartida.
+* Procesar muchas simulaciones independientes con diferentes parámetros.
+- Ejecutar una aplicación que necesita sincronización entre cada instrucción.
+
+Un Grid tiene servidores con diferentes procesadores, sistemas operativos y capacidades. ¿Qué propiedad representa esta situación?
+- Centralización de recursos heterogéneos en un mismo servidor.
+- Homogeneización de recursos para facilitar la ejecución.
+* Integración de recursos heterogéneos dentro de una infraestructura.
+- Virtualización de recursos para eliminar sus diferencias físicas.
+
+Un Grid reúne recursos con más FLOPS que una supercomputadora, pero tarda más en resolver cierto problema. ¿Cuál explicación es más adecuada?
+- Los FLOPS determinan únicamente la velocidad de comunicación entre nodos.
+- La cantidad de nodos siempre reduce el rendimiento de cada aplicación.
+- Los recursos distribuidos no pueden ejecutar operaciones simultáneamente.
+* La comunicación y sincronización pueden limitar el rendimiento obtenido.
+
+¿Cuál diferencia describe mejor a la computación Grid y la computación paralela?
+- Grid distribuye datos, mientras paralelismo distribuye únicamente usuarios.
+- Grid necesita ejecución simultánea, mientras paralelismo no la requiere.
+* Grid coordina recursos distribuidos, mientras paralelismo divide el trabajo.
+- Grid utiliza varios equipos, mientras paralelismo utiliza solamente uno.
+
+¿Cuál afirmación describe correctamente la relación entre un Grid y una supercomputadora?
+- Una supercomputadora siempre forma parte de cualquier infraestructura Grid.
+- Un Grid funciona únicamente cuando utiliza computadoras personales.
+- Una supercomputadora reemplaza necesariamente todos los recursos del Grid.
+* Una supercomputadora puede participar como recurso dentro de un Grid.
+
+¿Qué ocurre normalmente cuando un usuario envía un trabajo a un Grid?
+- El usuario ejecuta directamente el trabajo en todos los nodos disponibles.
+* La infraestructura identifica recursos y asigna el trabajo correspondiente.
+- El nodo de datos procesa el trabajo antes de enviarlo al usuario.
+- Cada proveedor decide independientemente qué parte debe ejecutar.
+
+¿Cuál afirmación sobre un nodo de control es más precisa?
+- Todo Grid requiere exactamente un servidor físico dedicado al control.
+- El nodo de control debe proporcionar la mayor capacidad de procesamiento.
+* Las funciones de control pueden estar distribuidas entre varios servicios.
+- El nodo de control almacena obligatoriamente todos los datos del sistema.
+
+Un investigador envía un programa junto con sus datos de entrada al Grid. ¿Qué puede hacer la infraestructura?
+- Convertir automáticamente el programa en código ejecutable universal.
+- Modificar el algoritmo para adaptarlo al hardware de cada proveedor.
+- Ejecutar el programa sin considerar los recursos requeridos.
+* Asignar el trabajo a un recurso compatible con sus requisitos.
+
+¿Cuál situación representa mejor la función de un nodo proveedor?
+- Recibir solicitudes y almacenar permanentemente los resultados.
+- Administrar usuarios y establecer las políticas generales del Grid.
+* Aportar capacidad de procesamiento para ejecutar determinados trabajos.
+- Coordinar exclusivamente la comunicación entre los demás nodos.
+
+¿Por qué un Grid puede aprovechar equipos que ya pertenecen a distintas instituciones?
+- Porque convierte físicamente todos los equipos en una sola máquina.
+- Porque elimina las diferencias entre los recursos utilizados.
+* Porque permite compartir recursos mediante una infraestructura coordinada.
+- Porque obliga a todas las instituciones a utilizar el mismo hardware.
+
+¿Cuál comparación representa mejor el papel del middleware dentro de un Grid?
+- Es como el trabajador que realiza directamente todas las tareas.
+- Es como el archivo donde se almacenan los resultados obtenidos.
+- Es como el equipo que aporta la mayor capacidad de procesamiento.
+* Es como el sistema que organiza la comunicación y coordinación del equipo.
